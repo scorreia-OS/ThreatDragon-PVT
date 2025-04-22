@@ -1,0 +1,803 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "Reliaquest > Outsystems Threat Model",
+    "owner": "",
+    "description": "",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "New STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.4.1",
+        "cells": [
+          {
+            "position": {
+              "x": 340,
+              "y": 260
+            },
+            "size": {
+              "width": 120,
+              "height": 70
+            },
+            "attrs": {
+              "label": {
+                "text": "MITM"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "26f22e5e-526d-48f7-8c71-2f66983a8985",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "MITM",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "position": {
+              "x": 90,
+              "y": 70
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "MITM"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 1,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "f9075a8d-08eb-4967-840b-340bbf2d8869"
+                },
+                {
+                  "group": "right",
+                  "id": "0d470fab-8f4d-4599-84ba-60c36fd5c63f"
+                },
+                {
+                  "group": "bottom",
+                  "id": "fb4ffad8-ef5a-4162-906e-c26e55d9c2b1"
+                },
+                {
+                  "group": "left",
+                  "id": "c0226416-a99d-40da-9534-7f1d1621c374"
+                }
+              ]
+            },
+            "id": "745c3887-8de4-4011-a7cb-938be0496209",
+            "data": {
+              "type": "tm.Actor",
+              "name": "MITM",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            },
+            "children": [
+              "53682352-9bc9-47ba-98df-868ac6bc5bb9"
+            ]
+          },
+          {
+            "position": {
+              "x": 500,
+              "y": 460
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Outsystems\nServer"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 2,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "f9075a8d-08eb-4967-840b-340bbf2d8869"
+                },
+                {
+                  "group": "right",
+                  "id": "0d470fab-8f4d-4599-84ba-60c36fd5c63f"
+                },
+                {
+                  "group": "bottom",
+                  "id": "fb4ffad8-ef5a-4162-906e-c26e55d9c2b1"
+                },
+                {
+                  "group": "left",
+                  "id": "c0226416-a99d-40da-9534-7f1d1621c374"
+                }
+              ]
+            },
+            "id": "2a4eeda9-3962-4e18-b9dd-7821360dac2c",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Outsystems\nServer",
+              "description": "Server with local users created. Provide Sudo access to Reliaquest users",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": true,
+              "threats": [
+                {
+                  "id": "401c715f-ea89-414b-9479-81bfda756cf0",
+                  "title": "Lack of accountability",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Repudiation",
+                  "description": "Due to the use of shared accounts or poor logging, it's impossible to definitively determine which specific individual performed actions on the server using the third-party credentials.\nThreat Actor: Any user (legitimate, former, or attacker) using a shared or improperly attributed credential.\nImpact: Inability to perform audits or forensic analysis; undermines non-repudiation; hinders incident response and remediation.",
+                  "mitigation": "Enforce unique, named user accounts. Implement comprehensive server-side logging and auditing of all actions performed by authenticated users. Logs and alerts are monitored constantly.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": "7"
+                },
+                {
+                  "id": "0d885376-8f4e-4b96-b2e3-8f3793b68440",
+                  "title": "Over-Privileged Access",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "The account used by the third party is granted more permissions (read, write, execute) on the server than are strictly necessary for their intended function, violating the principle of least privilege.\nThreat Actor: Malicious/Negligent Third-Party User, Attacker who has compromised the third-party account.\nImpact: Excessive data exposure/theft/modification; potential for privilege escalation or lateral movement; increased damage (\"blast radius\") from a compromised account.",
+                  "mitigation": "Adhere strictly to the Principle of Least Privilege; use Role-Based Access Control (RBAC); conduct periodic permission reviews. Log monitoring and alerts for potential anomalous behaviour.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": "8"
+                },
+                {
+                  "id": "e9f6bfb5-bb12-4224-ad82-8547adaed790",
+                  "title": "Default/Shared Account Usage",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Repudiation",
+                  "description": "Using generic accounts not tied to individuals (e.g., \"vendor_login\") or failing to change default passwords set by software/hardware vendors connected to the server.\nThreat Actor: Opportunistic Attacker (targeting defaults), Any user of a shared account.\nImpact: Easy unauthorized access via known default credentials; complete lack of accountability for actions taken with shared accounts.",
+                  "mitigation": "Prohibit shared accounts; enforce changing of all default credentials during setup; verify configurations.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": "8"
+                },
+                {
+                  "id": "261f580d-9aff-46ee-adec-6aabb1d06fe4",
+                  "title": "Failure to Revoke Access Promptly",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "The third party's access credentials remain active on your server even after the business relationship has ended or the specific employee needing access has left the third-party company (orphaned account).\nThreat Actor: Former Third-Party Employee, External Attacker discovering/exploiting an orphaned account.\nImpact: Continued unauthorized access after the legitimate need has expired; potential data breach or sabotage by disgruntled ex-employees.",
+                  "mitigation": "Implement formal access review and de-provisioning processes; conduct regular account audits; automate revocation where possible.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": "7"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 2
+              }
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "58594589-60e9-4f57-8acf-07d2e13610be",
+            "source": {
+              "x": 70,
+              "y": 220
+            },
+            "target": {
+              "x": 420,
+              "y": 40
+            },
+            "vertices": [
+              {
+                "x": 280,
+                "y": 190
+              },
+              {
+                "x": 390,
+                "y": 130
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Network Transmission",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "ssl/tls",
+              "threats": [
+                {
+                  "id": "64b24243-cb82-440e-bb2a-59f7e0986294",
+                  "title": "Password Interception",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An attacker monitors network traffic between the third party and your server and captures the password if it is transmitted over an unencrypted protocol (like HTTP, FTP, Telnet).   \n\nThreat Actor: Network Eavesdropper (Internal to either network, or on the internet path).\nImpact: Theft of credentials in transit, leading to unauthorized access.",
+                  "mitigation": "Enforce strong encryption protocols (SSH, HTTPS/TLS, SFTP, VPN); disable/block unencrypted protocols (FTP, Telnet, HTTP).",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": "5"
+                },
+                {
+                  "id": "047c6575-6ab5-408d-a076-4db12718e0a4",
+                  "title": "Man-in-the-Middle (MitM) Attacks",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker positions themselves between the third party and your server, intercepting and potentially altering communications, which can include capturing credentials even over encrypted channels if not properly configured/validated.   \nThreat Actor: Network Attacker actively intercepting/altering traffic.\nImpact: Credential theft, session hijacking, data modification in transit.",
+                  "mitigation": "Use strong/up-to-date TLS/SSH configurations; enforce certificate validation; use VPNs; consider HSTS.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": "6"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Network Transmission"
+            ],
+            "id": "794d8ee0-2c09-45e5-b91f-2be789c64af5",
+            "source": {
+              "cell": "45ec3576-aebe-404d-9125-1d20f69d6d12",
+              "port": "ede72ec4-934b-4515-aaa8-bfd83e5e50ef"
+            },
+            "target": {
+              "cell": "2a4eeda9-3962-4e18-b9dd-7821360dac2c",
+              "port": "f9075a8d-08eb-4967-840b-340bbf2d8869"
+            },
+            "vertices": [
+              {
+                "x": 556.25,
+                "y": 350
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 250,
+              "y": 40
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Insider threat"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 13,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "73677de3-cc54-4991-a36b-8cbe6e2206d4"
+                },
+                {
+                  "group": "right",
+                  "id": "afb339e9-23dd-420c-9303-daca081d7394"
+                },
+                {
+                  "group": "bottom",
+                  "id": "33eea144-53c7-4b5e-b806-f7dbf8b4de1b"
+                },
+                {
+                  "group": "left",
+                  "id": "e94f61f2-2767-4f54-8b4a-87cd6d266c36"
+                }
+              ]
+            },
+            "id": "3141c7b0-7c69-41f3-bf51-1820d7cc8a0c",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Insider threat",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 491.25,
+              "y": 30
+            },
+            "size": {
+              "width": 130,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Greymatter"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 15,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "3ec7ba3a-94c6-4a62-ba10-5cb51d1e6c77"
+                },
+                {
+                  "group": "right",
+                  "id": "e4e6e5d5-539a-439f-ad0e-55ca0ad86bb2"
+                },
+                {
+                  "group": "bottom",
+                  "id": "ede72ec4-934b-4515-aaa8-bfd83e5e50ef"
+                },
+                {
+                  "group": "left",
+                  "id": "b1f839d4-fa51-4828-82a7-33478c1d34b4"
+                }
+              ]
+            },
+            "id": "45ec3576-aebe-404d-9125-1d20f69d6d12",
+            "data": {
+              "type": "tm.Process",
+              "name": "Greymatter",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "97b41785-651d-46ae-856a-be54c3e9dd4b",
+                  "title": "Weak/Guessable Passwords",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "The third party selects a password that is easily discoverable through common lists (dictionary words, simple patterns), knowledge of the user/company, or brute-force guessing attempts.   \nThreat Actor: Opportunistic Attacker, Automated Scripts.\nImpact: Unauthorized access leading to data breach, system modification, service disruption, or further network infiltration.",
+                  "mitigation": "Enforce strong password complexity requirements server-side; provide password guidelines.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "85775784-396c-4f68-9b7e-c18a26e683c9",
+                  "title": "Brute-Force/Dictionary Attacks",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Attackers systematically attempt numerous password combinations or words from predefined lists against the third-party account until the correct password is found or the account is locked out.\nThreat Actor: Determined Attacker, Automated Scripts (Bots).\nImpact: Unauthorized access (if successful), account lockout preventing legitimate access (Denial of Service for the third party).",
+                  "mitigation": "Implement account lockout policies, use CAPTCHAs, monitor failed logins (e.g., Fail2Ban), consider IP blocking.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": "6"
+                },
+                {
+                  "id": "80346dd8-9d87-4635-a60e-36ee9c6b795f",
+                  "title": "Credential Stuffing",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Attackers obtain lists of usernames and passwords from data breaches on other websites and systematically try these leaked credentials against your server, exploiting password reuse by the third party.   \nThreat Actor: Attackers using lists of breached credentials, Automated Scripts.\nImpact: High likelihood of unauthorized access if the third party reused passwords across sites.",
+                  "mitigation": "Implement Multi-Factor Authentication (MFA) (most effective); monitor login patterns; check credentials against known breach lists (use cautiously).",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": "8"
+                },
+                {
+                  "id": "4aeb01c7-08c1-4a5b-bf69-5104a96a7c9a",
+                  "title": "Password Phishing/Social Engineering (targeting the Third Party)",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "An attacker tricks the third-party user into revealing their password through deceptive emails, fake login pages, phone calls, or other manipulation tactics.   \nThreat Actor: Social Engineers, Phishing Campaign Operators.\nImpact: Compromise of the third party's credentials, leading to unauthorized access to your server.  ",
+                  "mitigation": "Implement MFA; educate the third party; ensure secure login pages (HTTPS, clear branding).",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": "7"
+                },
+                {
+                  "id": "6587b957-aa7b-4a3b-8e0f-1908766fea18",
+                  "title": "Password Spraying",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "A variation of brute-force where attackers try a small number of common passwords (e.g., \"Spring2025\", \"Password123\") against many different accounts, including the third party's, to avoid triggering individual account lockouts.\nThreat Actor: Stealthy Attackers (often automated) targeting multiple accounts with common passwords.\nImpact: Unauthorized access, potentially bypassing per-account lockout thresholds.   ",
+                  "mitigation": "Implement MFA; enforce strong password policies (no common passwords); monitor for low-and-slow attack patterns.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": "6"
+                },
+                {
+                  "id": "ba831192-1d28-4e07-8aba-a7d1cbb1121d",
+                  "title": "Password Sharing (by the Third Party)",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "The credential intended for one person is shared among multiple individuals within the third-party organization, obscuring who performed actions and increasing the chance of misuse or exposure.\nThreat Actor: Negligent or Malicious Individuals within the Third-Party organization.\nImpact: Lack of individual accountability (audit failure), unauthorized access by unintended personnel, increased risk of credential exposure.",
+                  "mitigation": "Mandate and provide individual named accounts; prohibit sharing contractually; enforce MFA per user; conduct access reviews.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": "6"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 4,
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
+            }
+          }
+        ],
+        "description": "RQ Connection to Splunk"
+      },
+      {
+        "id": 2,
+        "title": "New STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.4.1",
+        "cells": [],
+        "description": "RQ access SSH"
+      }
+    ],
+    "diagramTop": 3,
+    "reviewer": "",
+    "threatTop": 15
+  }
+}
